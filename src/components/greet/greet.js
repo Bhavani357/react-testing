@@ -2,7 +2,7 @@
 const Greet = (props)=>{
     const{name} = props
     return(
-        <div>Hello {props.name}</div>
+        <div>Hello {name? name: "Guest"}</div>
     )
 }
 
