@@ -4,13 +4,13 @@ import {render, screen} from "@testing-library/react"
 import Greet from "./Greet"
 
 describe("Greet", ()=>{
-    test("renders correctly",()=>{
+    it("renders correctly",()=>{
         render(<Greet/>)
         const textElement= screen.getByText('Hello')
         expect(textElement).toBeInTheDocument()
     })
     
-    test('renders a name',()=>{
+    it('renders a name',()=>{
         render(<Greet name="bhavani"/>)
         const textElement = screen.getByText("Hello bhavani")
         expect(textElement).toBeInTheDocument()
