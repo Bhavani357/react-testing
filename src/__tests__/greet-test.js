@@ -1,7 +1,7 @@
 // Greet should render the text hello and if a name is passed into the component
 // It should render hello followed by the name 
 import {render, screen} from "@testing-library/react"
-import Greet from "./Greet"
+import Greet from "../components/greet/Greet"
 
 describe("Greet", ()=>{
     test("renders correctly",()=>{
