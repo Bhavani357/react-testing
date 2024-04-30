@@ -1,6 +1,8 @@
-const Greet = ()=>{
+
+const Greet = (props)=>{
+    const{name} = props
     return(
-        <h1>Hello</h1>
+        <div>Hello {props.name}</div>
     )
 }
 
